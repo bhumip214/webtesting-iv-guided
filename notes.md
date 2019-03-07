@@ -9,3 +9,11 @@ function name(args) => return something;
 - data access: talk to the persistent data store.
 
 set the test environment to run on 'node' instead of a browser
+
+window => global
+
+cross-env => npx package used to abstract away OS differences setting env vars
+
+DB_ENV=testing => settng environment to testing
+
+npx knex migrate:latest --env=testing => to create test database from knexfile.js
